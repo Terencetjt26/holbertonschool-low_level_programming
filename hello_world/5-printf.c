@@ -3,9 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints "with proper grammar, but the outcome is a piece of art,"
- *              using the printf function.
- *
+ * Description: Prints a sentence using printf function.
  * Return: Always 0 (Success)
  */
 int main(void)
