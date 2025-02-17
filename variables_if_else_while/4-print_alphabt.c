@@ -1,14 +1,16 @@
 #include <stdio.h>
+
 int main(void)
 {
-    char letter;
-
-    for (letter = 'a'; letter <= 'z'; letter++)
+    char c = 'a';
+    while (c <= 'z')
     {
-        if (letter != 'q' && letter != 'e')
-            putchar(letter);
+        if (c != 'e' && c != 'q')
+        {
+            putchar(c);
+        }
+        c++;
     }
     putchar('\n');
-
     return (0);
 }
