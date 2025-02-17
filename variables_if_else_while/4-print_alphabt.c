@@ -1,20 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Programme qui affiche l'alphabet sauf 'q' et 'e'
+ * main - Prints the alphabet in lowercase, except 'q' and 'e'
  *
- * Return: Toujours 0 (succès)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char letter;
+	char c = 'a';
 
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        if (letter != 'q' && letter != 'e')
-            putchar(letter);
-    }
-    putchar('\n');
+	while (c <= 'z')
+	{
+		if (c != 'e' && c != 'q')
+			putchar(c);
+		c++;
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
