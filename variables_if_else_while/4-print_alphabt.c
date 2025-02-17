@@ -1,16 +1,20 @@
 #include <stdio.h>
 
+/**
+ * main - Programme qui affiche l'alphabet sauf 'q' et 'e'
+ *
+ * Return: Toujours 0 (succès)
+ */
 int main(void)
 {
-    char c = 'a';
-    while (c <= 'z')
+    char letter;
+
+    for (letter = 'a'; letter <= 'z'; letter++)
     {
-        if (c != 'e' && c != 'q')
-        {
-            putchar(c);
-        }
-        c++;
+        if (letter != 'q' && letter != 'e')
+            putchar(letter);
     }
     putchar('\n');
+
     return (0);
 }
