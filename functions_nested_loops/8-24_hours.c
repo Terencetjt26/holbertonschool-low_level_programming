@@ -1,6 +1,6 @@
-#include "main.h"
+#include "8-24_hours.h"
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
     int h, m;
 

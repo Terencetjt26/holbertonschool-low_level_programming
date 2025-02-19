@@ -1,7 +1,7 @@
 #include "8-24_hours.h"
 
 /* Déclaration de la fonction jack_bauer */
-void jack_bauer(void);
+void jack_bauer(void)
 
 int main(void)
 {
