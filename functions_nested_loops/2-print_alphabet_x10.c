@@ -1,3 +1,19 @@
-void print_alphabet_x10(void);
-Output: Prints the alphabet from a to z 10 times, each on a new line.
-Constraints: You used _putchar only twice in your code, following the given restrictions.
+#include "main.h"
+
+/**
+ * print_alphabet_x10 - Prints the alphabet in lowercase 10 times
+ */
+void print_alphabet_x10(void)
+{
+    char alphabet[27] = "abcdefghijklmnopqrstuvwxyz\n";
+    int i;
+
+    for (i = 0; i < 10; i++)  // Loop to print 10 times
+    {
+        char *ptr = alphabet;
+        while (*ptr)
+        {
+            _putchar(*ptr++);
+        }
+    }
+}
