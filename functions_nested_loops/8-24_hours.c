@@ -1,23 +1,18 @@
 #include "main.h"
 
-/**
- * jack_bauer - imprime chaque minute de la journée de Jack Bauer,
- *               de 00:00 à 23:59.
- */
-void jack_bauer(void);
+void jack_bauer(void)
 {
-    int hour, minute;
+    int h, m;
 
-    for (hour = 0; hour < 24; hour++)  /* Boucle sur les heures */
+    for (h = 0; h < 24; h++)
     {
-        for (minute = 0; minute < 60; minute++)  /* Boucle sur les minutes */
+        for (m = 0; m < 60; m++)
         {
-            /* Affiche l'heure et la minute au format 00:00 */
-            _putchar((hour / 10) + '0');  /* Affiche le premier chiffre de l'heure */
-            _putchar((hour % 10) + '0');  /* Affiche le deuxième chiffre de l'heure */
+            _putchar('0' + h / 10);  // Afficher l'heure (dizaines)
+            _putchar('0' + h % 10);  // Afficher l'heure (unités)
             _putchar(':');
-            _putchar((minute / 10) + '0');  /* Affiche le premier chiffre de la minute */
-            _putchar((minute % 10) + '0');  /* Affiche le deuxième chiffre de la minute */
+            _putchar('0' + m / 10);  // Afficher les minutes (dizaines)
+            _putchar('0' + m % 10);  // Afficher les minutes (unités)
             _putchar('\n');
         }
     }
