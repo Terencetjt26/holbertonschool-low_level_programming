@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# This script will fix formatting issues in your C file by replacing spaces with tabs
+# and removing spaces at the beginning of lines.
+
+# Replace all leading spaces with tabs
+sed -i 's/^[ ]*\t*/\t/' 6-abs.c
+
+# Remove any extra spaces at the beginning of lines
+sed -i 's/^[ ]*//g' 6-abs.c
+
+# Check for betty-style issues again
+betty-style 6-abs.c
