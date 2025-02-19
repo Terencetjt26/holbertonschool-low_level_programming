@@ -1,6 +1,6 @@
-#ifndef EIGHT_24_HOURS_H
-#define EIGHT_24_HOURS_H
+#ifndef _8_24_HOURS_H_
+#define _8_24_HOURS_H_
 
 void jack_bauer(void);
 
-#endif /* EIGHT_24_HOURS_H */
+#endif /* _8_24_HOURS_H_ */
