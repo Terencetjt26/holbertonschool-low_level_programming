@@ -2,13 +2,13 @@
 #include "_putchar.h"
 
 /**
- * jack_bauer - Prints every minute of the day of Jack Bauer
- *
- * Description: This function prints every minute from 00:00 to 23:59
- * using _putchar to display the time in the format HH:MM.
- *
- * Return: void
- */
+	* jack_bauer - Prints every minute of the day of Jack Bauer
+	*
+	* Description: This function prints every minute from 00:00 to 23:59
+	* using _putchar to display the time in the format HH:MM.
+	*
+	* Return: void
+	*/
 void jack_bauer(void)
 {
 	int h, m;
