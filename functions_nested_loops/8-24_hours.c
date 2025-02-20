@@ -20,7 +20,7 @@ void jack_bauer(void)
 			_putchar('0' + h / 10);	/* print the tens digit of hour */
 			_putchar('0' + h % 10);	/* print the ones digit of hour */
 			_putchar(':');
-			_putchar('0' + m / 10);	/* print the tens digit of minute */	
+			_putchar('0' + m / 10);	/* print the tens digit of minute */
 			_putchar('0' + m % 10);	/* print the ones digit of minute */
 			_putchar('\n');
 		}
