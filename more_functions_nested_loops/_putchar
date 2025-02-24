@@ -1,1 +1,3 @@
+#include "_putchar.h"
+
 void more_numbers(void);
