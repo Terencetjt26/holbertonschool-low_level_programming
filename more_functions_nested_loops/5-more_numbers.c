@@ -1,26 +1,22 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
-* more_numbers - Displays 10 times the numbers from 0 to 14
-* followed by a line break.
-*/
-void more_numbers(void)
+/*
+ * main - Entry point of the program
+ *
+ * This function prints the numbers from 0 to 14 ten times on separate lines.
+ */
+int main(void)
 {
-	int i, j;
-
-	for (i = 0; i < 10; i++) /* Loop to repeat 10 times */
+	for (int i = 0; i < 10; i++)  /* Loop 10 times for each line */
 	{
-		for (j = 0; j <= 14; j++) /* Loop to print numbers from 0 to 14 */
+		for (int j = 0; j <= 14; j++)  /* Loop from 0 to 14 */
 		{
-			if (j >= 10) /* Check if number is 10 or more */
-			{
-				_putchar('1'); /* Print the '1' for numbers 10-14 */
-			}
+			if (j < 10)
+				printf("%d", j);  /* Print numbers 0-9 */
 			else
-			{
-				_putchar('0' + j);
-			}
+				printf("%d", j);  /* Print numbers 10-14 */
 		}
-		_putchar('\n'); /* New line after printing numbers 0-14 */
+		printf("\n");  /* New line after each row */
 	}
+	return (0); /* Parentheses around return value */
 }
