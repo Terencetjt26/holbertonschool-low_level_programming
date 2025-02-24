@@ -15,7 +15,6 @@ void more_numbers(void)
 			if (j >= 10) /* Check if number is 10 or more */
 			{
 				_putchar('1'); /* Print the '1' for numbers 10-14 */
-				_putchar('0' + (j % 10)); /* Print the last digit */
 			}
 			else
 			{
