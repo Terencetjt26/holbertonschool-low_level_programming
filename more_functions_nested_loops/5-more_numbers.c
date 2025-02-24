@@ -1,22 +1,25 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point of the program
  *
- * This function prints the numbers from 0 to 14 ten times on separate lines.
+ * Description: This function prints the numbers from 0 to 14 ten times
+ * on separate lines.
+ *
+ * Return: return 0
  */
 int main(void)
 {
-	for (int i = 0; i < 10; i++)  /* Loop 10 times for each line */
+	int i, j;  /* Déclaration des variables en dehors de la boucl */
+
+	for (i = 0; i < 10; i++)  /* Boucle 10 fois pour chaque ligne */
 	{
-		for (int j = 0; j <= 14; j++)  /* Loop from 0 to 14 */
+		for (j = 0; j <= 14; j++)  /* Boucle de 0 à 14 */
 		{
-			if (j < 10)
-				printf("%d", j);  /* Print numbers 0-9 */
-			else
-				printf("%d", j);  /* Print numbers 10-14 */
+			printf("%d", j);  /* Imprimer les nombres de 0 à 14 */
 		}
-		printf("\n");  /* New line after each row */
+		printf("\n");  /* Nouvelle ligne après chaque lign */
 	}
-	return (0); /* Parentheses around return value */
+
+	return (0);  /* Retourne 0 pour indiquer que l'exécution a réus */
 }
