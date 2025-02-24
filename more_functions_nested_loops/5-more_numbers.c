@@ -1,25 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point of the program
- *
- * Description: This function prints the numbers from 0 to 14 ten times
- * on separate lines.
- *
- * Return: return 0
+ * more_numbers - Prints numbers from 0 to 14, ten times.
  */
-int main(void)
+void more_numbers(void)
 {
-	int i, j;  /* Déclaration des variables en dehors de la boucl */
+	int i, j;
+	char numbers[] = "01234567891011121314\n";
 
-	for (i = 0; i < 10; i++)  /* Boucle 10 fois pour chaque ligne */
+	for (i = 0; i < 10; i++)  /* Boucle pour imprimer 10 lignes */
 	{
-		for (j = 0; j <= 14; j++)  /* Boucle de 0 à 14 */
-		{
-			printf("%d", j);  /* Imprimer les nombres de 0 à 14 */
-		}
-		printf("\n");  /* Nouvelle ligne après chaque lign */
-	}
+		char *ptr = numbers;
 
-	return (0);  /* Retourne 0 pour indiquer que l'exécution a réus */
+		while (*ptr)
+		{
+			_putchar(*ptr);
+			ptr++;
+		}
+	}
 }
