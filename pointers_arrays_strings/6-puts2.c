@@ -10,8 +10,8 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]); /* Affiche le caractère à l'index actuel */
-		i += 2; /* Saute un caractère */
+		_putchar(str[i]);
+		i += 2;
 	}
-	_putchar('\n'); /* Ajoute une nouvelle ligne */
+	_putchar('\n');
 }
