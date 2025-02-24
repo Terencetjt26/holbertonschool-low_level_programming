@@ -5,7 +5,7 @@
  */
 void more_numbers(void)
 {
-	int i, j;
+	int i;
 	char numbers[] = "01234567891011121314\n";
 
 	for (i = 0; i < 10; i++)  /* Boucle pour imprimer 10 lignes */
