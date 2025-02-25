@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * puts_half - Affiche la seconde moitié d'une chaîne de caractères.
@@ -18,6 +18,7 @@ void puts_half(char *str)
 		n = (length - 1) / 2 + 1;
 
 	for (i = n; i < length; i++)
-		putchar(str[i]);
-	putchar('\n');
+		write(1, &str[i], 1);
+	write(1, "\n", 1);
+	
 }
