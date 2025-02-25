@@ -20,5 +20,4 @@ void puts_half(char *str)
 	for (i = n; i < length; i++)
 		write(1, &str[i], 1);
 	write(1, "\n", 1);
-	
 }
