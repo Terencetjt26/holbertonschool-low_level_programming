@@ -26,5 +26,5 @@ char *_strcat(char *dest, char *src)
 	/* Ajouter le caractère nul de fin */
 	*ptr = '\0';
 
-	return dest;
+	return (dest);
 }
