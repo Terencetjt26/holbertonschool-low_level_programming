@@ -12,14 +12,12 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
-	/* Copie des caractères de src vers dest jusqu'à n caractères ou jusqu'à la fin de src */
 	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
 
-	/* Si la chaîne src est plus courte que n, on remplit le reste avec des '\0' */
 	while (i < n)
 	{
 		dest[i] = '\0';
