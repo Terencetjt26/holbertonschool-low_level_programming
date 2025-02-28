@@ -17,7 +17,7 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
-		/* Vérifie si le caractère précédent est un séparateur */
+		/* Véri:fie si le caractère précédent est un séparateur */
 		for (j = 0; separators[j] != '\0'; j++)
 		{
 			if (str[i - 1] == separators[j] && str[i] >= 'a' && str[i] <= 'z')
@@ -25,7 +25,7 @@ char *cap_string(char *str)
 				str[i] -= 32; /* Convertit en majuscule */
 				break;
 			}
- 
+
 		}
 		i++;
 	}
