@@ -1,41 +1,33 @@
 #include "main.h"
-#include <string.h>
-#include <stddef.h>
-
 
 /**
-* cap_string - Capitalizes all words of a string.
-* @str: The string to modify.
+* cap_string - Capitalise chaque mot d'une chaîne
+* @str: La chaîne d'entrée
 *
-* Return: A pointer to the modified string.
+* Return: La chaîne modifiée
 */
 char *cap_string(char *str)
 {
-	int i = 0;
-	int in_word = 0;
+	int i = 0, j;
 	char separators[] = " \t\n,;.!?\"(){}";
 
-	while (str[i] != '\0')
+	/* Vérifie le premier caractère */
+	if (str[i] >= 'a' && str[i] <= 'z')
+		str[i] -= 32;
+
+	while (str[i])
 	{
-		/* Check if the current character is a separator */
-		if (strchr(separators, str[i]) != NULL)
+		/* Vérifie si le caractère précédent est un séparateur */
+		for (j = 0; separators[j] != '\0'; j++)
 		{
-			in_word = 0; /* We are outside of a word */
-		}
-		else
-		{
-			if (!in_word)
+			if (str[i - 1] == separators[j] && str[i] >= 'a' && str[i] <= 'z')
 			{
-				/* Capitalize the first letter of the word */
-				if (str[i] >= 'a' && str[i] <= 'z')
-				{
-					str[i] = str[i] - 'a' + 'A';
-				}
-				in_word = 1; /* Now we are inside a word */
+				str[i] -= 32; /* Convertit en majuscule */
+				break;
 			}
+ 
 		}
 		i++;
 	}
-
 	return (str);
 }
