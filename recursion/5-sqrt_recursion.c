@@ -1,33 +1,32 @@
 #include "main.h"
 
 /**
-* find_sqrt - Helper function to find the square root recursively
-* @n: The number to find the square root of
-* @i: The current divisor being tested
+* _sqrt_helper - Fonction auxiliaire pour trouver la racine carrée.
+* @n: Nombre dont on cherche la racine carrée.
+* @i: Nombre testé comme racine potentielle.
 *
-* Return: The natural square root, or -1 if none exists
+* Return: La racine carrée naturelle de `n`, ou -1 si elle n'existe pas.
 */
-int find_sqrt(int n, int i)
+int _sqrt_helper(int n, int i)
 {
-	if (i * i > n)  /* Si i^2 dépasse n, il n'a pas de racine carrée naturelle */
+	if (i * i > n)  /* Si i^2 dépasse n, alors pas de racine parfaite*/
 		return (-1);
-	if (i * i == n) /* Si i^2 == n, on a trouvé la racine carrée */
+	if (i * i == n) /* Si i^2 est exactement n, alors i est la racine carrée*/
 		return (i);
 
-	return (find_sqrt(n, i + 1)); /* Appel récursif avec i + 1 */
+	return (_sqrt_helper(n, i + 1)); /* Appel récursif en augmentant i */
 }
 
 /**
-* _sqrt_recursion - Returns the natural square root of a number
-* @n: The number to find the square root of
+* _sqrt_recursion - Retourne la racine carrée naturelle d'un nombre.
+* @n: Nombre dont on cherche la racine carrée.
 *
-* Return: The natural square root of n, or -1 if n has no natural square root
+* Return: La racine carrée naturelle de `n`, ou -1 si elle n'existe pas.
 */
 int _sqrt_recursion(int n)
 {
 	if (n < 0) /* Si n est négatif, il n'a pas de racine carrée naturell*/
 		return (-1);
 
-	return (find_sqrt(n, 0)); /* Appel de la fonction auxiliaire */
+	return (_sqrt_helper(n, 0)); /* Appel de la fonction auxiliaire */
 }
-
