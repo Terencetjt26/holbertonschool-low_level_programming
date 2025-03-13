@@ -6,7 +6,7 @@
 * @name: Nom du chien
 * @age: Âge du chien
 * @owner: Propriétaire du chien
-* 
+*
 * Return: Pointeur vers le nouveau chien, ou NULL si échec
 */
 dog_t *new_dog(char *name, float age, char *owner)
