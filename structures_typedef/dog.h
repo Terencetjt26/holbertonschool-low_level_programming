@@ -6,9 +6,6 @@
 * @name: Nom du chien (chaîne de caractères)
 * @age: Âge du chien (nombre flottant)
 * @owner: Nom du propriétaire (chaîne de caractères)
-*
-* Description: Cette structure permet de stocker les informations
-* d'un chien, notamment son nom, son âge et le nom de son propriétaire.
 */
 struct dog
 {
@@ -16,5 +13,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/* Déclaration de la fonction init_dog */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
