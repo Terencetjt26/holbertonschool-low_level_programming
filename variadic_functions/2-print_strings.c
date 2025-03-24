@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
-* print_strings - Affiche des chaînes de caractères séparées par un séparateur.
+* print_strings - Affiche des chaînes de caractères
+* séparées par un séparateur.
 * @separator: Chaîne de caractères séparant les chaînes (peut être NULL).
 * @n: Nombre de chaînes passées à la fonction.
 */
