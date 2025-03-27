@@ -1,12 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
-* main - Entry point of the program
-* @argc: Argument count
-* @argv: Argument vector
-* Return: 0 on success, or an error code
+* main - Programme principal qui effectue une opération sur deux nombres.
+* @argc: Nombre d'arguments.
+* @argv: Tableau des arguments passés en ligne de commande.
+* Return: 0 en cas de succès, ou un code d'erreur.
 */
 int main(int argc, char *argv[])
 {
@@ -23,6 +21,7 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 
 	operation = get_op_func(argv[2]);
+
 	if (operation == NULL)
 	{
 		printf("Error\n");
